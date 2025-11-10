@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabibRT</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        * {
+            color: white;
+        }
+
+        header {
+            position: relative;
+        }
+
+        /* #menu-btn {
+            position: absolute;
+            top: 0;
+            right: 20px;
+        }
+
+        #mobile-menu {
+            top: 30px;
+            right: 0;
+        } */
+
+        #mobile-menu li {
+            padding: 10px;
+        }
+
+        #mobile-menu li a {
+            padding: 10px 50px;
+        }
+
+        #mobile-menu li:hover {
+            background: rgba(0, 0, 0, 0.808);
+        }
+
+        #mobile-menu li:last-child {
+            padding: auto;
+        }
+    </style>
+</head>
+
+<body class="relative min-h-screen text-white font-sans bg-black">
+
+    <!-- Content wrapper -->
+    <div class="relative z-10">
+
+        <!-- Top header -->
+        <div
+            class="w-full flex flex-col md:flex-row items-center justify-between px-5 md:px-20 py-2 bg-black/75 text-sm">
+            <div class="icons flex gap-5 mb-2 md:mb-0">
+                <a class="hover:text-[#29AE5F] duration-300" href="https://web.facebook.com/md.habib.reza.37"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a class="hover:text-[#29AE5F] duration-300"
+                    href="https://www.linkedin.com/in/habib-reza-rabbi-489085302/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a class="hover:text-[#29AE5F] duration-300" href="https://x.com/RezaHabib63839"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a class="hover:text-[#29AE5F] duration-300" href="https://github.com/habibreza98"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="phone__number flex flex-col md:flex-row md:items-center gap-3">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-[#29AE5F]"></i>
+                    <p>rezamdhabib@gmail.com</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-[#29AE5F]"></i>
+                    <p>017******15</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main header -->
+        <header class="flex items-center justify-between px-6 md:px-20 py-5 relative">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <a href="/main.html" class="flex items-center gap-3">
+                    <img class="h-[50px] w-[50px]" src="/images/Generated Image November 03, 2025 - 8_01PM.png"
+                        alt="logo">
+                    <h1 class="text-4xl md:text-5xl font-bold">Ha<span class="text-[#29AE5F]">bib</span>RT</h1>
+                </a>
+            </div>
+
+            <!-- Nav Links -->
+            <ul id="nav-links" class="hidden md:flex gap-8 items-center">
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/main.html">Home</a></li>
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/about.html">About</a></li>
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/works.html">Works</a></li>
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/blog.html">Blog</a></li>
+                <li><a class="text-[#29AE5F]" href="/contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Hire me button -->
+            <div class="hidden md:block">
+                <a class="py-2 px-5 bg-[#29AE5F] rounded-md border-2 border-[#29AE5F] hover:bg-transparent duration-300 hover:border-[#fff] hover:text-[#fff]"
+                    href="https://www.fiverr.com/habibrt444/buying?source=avatar_menu_profile">Hire me</a>
+            </div>
+
+            <!-- Hamburger menu -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <ul id="mobile-menu"
+                class="absolute top-full right-0 bg-black/80 backdrop-blur-sm w-50 rounded-lg hidden flex-col gap-5 p-5 text-right">
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/main.html">Home</a></li>
+                <li><a class="hover:text-[#29AE5F] duration-300 " href="about.html">About</a></li>
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/works.html">Works</a></li>
+                <li><a class="hover:text-[#29AE5F] duration-300" href="/blog.html">Blog</a></li>
+                <li><a class="text-[#29AE5F]" href="/contact.html">Contact</a></li>
+                <li><a class="py-2 bg-[#29AE5F] rounded-md border-2 border-[#29AE5F] hover:bg-transparent duration-300 hover:border-[#fff] hover:text-[#fff]"
+                        href="https://www.fiverr.com/habibrt444/buying?source=avatar_menu_profile">Hire me</a></li>
+            </ul>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="mx-5 md:mx-10 py-10">
+            <!-- Header -->
+            <header class="text-center mb-16">
+                <h1 class="text-2xl md:text-3xl font-semibold leading-tight mb-2">Testimonial</h1>
+                <p class="text-sm md:text-base text-gray-700">
+                    There are many variations of passages of Lorem Ipsum available, <br class="hidden md:block">
+                    but the majority have suffered alteration.
+                </p>
+            </header>
+        
+            <!-- Grid layout -->
+            <div class="contact flex flex-col md:flex-row gap-10">
+                <!-- Left side -->
+                <div class="part__one">
+                    <h1 class="text-2xl md:text-3xl font-semibold leading-tight mb-2">Let’s discuss your Project</h1>
+                    <p class="mb-8 text-sm md:text-base text-gray-700">
+                        There are many variations of passages of Lorem Ipsum available, <br class="hidden md:block">
+                        but the majority have suffered alteration.
+                    </p>
+        
+                    <!-- Contact Info Boxes -->
+                    <div class="space-y-4">
+                        <div class="address p-3 flex bg-white w-full sm:w-[300px] shadow-lg rounded-lg">
+                            <i class="fa-solid fa-location-dot text-2xl py-2 px-4 mr-2 bg-[#29AE5F] rounded-lg text-white"></i>
+                            <div>
+                                <p class="text-black text-sm">Address:</p>
+                                <h4 class="text-black text-base md:text-lg">Rajnagar, Moulvibazar</h4>
+                            </div>
+                        </div>
+        
+                        <div class="address p-3 flex bg-white w-full sm:w-[300px] shadow-lg rounded-lg">
+                            <i class="fa-solid fa-envelope text-2xl py-2 px-3 mr-2 bg-[#29AE5F] rounded-lg text-white"></i>
+                            <div>
+                                <p class="text-black text-sm">My E-mail:</p>
+                                <h4 class="text-black text-base md:text-lg">re******@gmail.com</h4>
+                            </div>
+                        </div>
+        
+                        <div class="address p-3 flex bg-white w-full sm:w-[300px] shadow-lg rounded-lg">
+                            <i class="fa-solid fa-phone text-2xl py-2 px-3 mr-2 bg-[#29AE5F] rounded-lg text-white"></i>
+                            <div>
+                                <p class="text-black text-sm">Call Me Now:</p>
+                                <h4 class="text-black text-base md:text-lg">+8801*******15</h4>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Social Icons -->
+                    <div class="icon flex flex-wrap gap-3 mt-5">
+                        <a class="px-4 py-2 items-center bg-[#29AE5F] rounded-full text-white" href="https://web.facebook.com/md.habib.reza.37"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="px-3 py-2 items-center bg-[#29AE5F] rounded-full text-white" href="https://x.com/RezaHabib63839"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a class="px-3 py-2 items-center bg-[#29AE5F] rounded-full text-white" href="https://github.com/habibreza98"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a class="px-3 py-2 items-center bg-[#29AE5F] rounded-full text-white"
+                            href="https://www.linkedin.com/in/habib-reza-rabbi-489085302/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="px-3 py-2 items-center bg-[#29AE5F] rounded-full text-white" href="https://dribbble.com/habib-reza-rabbi"><i
+                                class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+        
+                <!-- Right side -->
+                <div class="part__two md:ml-[80px] w-full md:w-auto">
+                    <form action="#" class="flex flex-col space-y-3">
+                        <h1 class="mb-4 text-sm md:text-base text-gray-700">
+                            There are many variations of passages of Lorem Ipsum available, <br class="hidden md:block">
+                            but the majority have suffered alteration.
+                        </h1>
+        
+                        <input
+                            class="p-3 w-full max-w-[500px] border border-gray-200 rounded-md outline-none text-black placeholder:text-gray-500 placeholder:text-sm"
+                            type="text" placeholder="Name*">
+                        <input
+                            class="p-3 w-full max-w-[500px] border border-gray-200 rounded-md outline-none text-black placeholder:text-gray-500 placeholder:text-sm"
+                            type="email" placeholder="E-mail*">
+                        <input
+                            class="p-3 w-full max-w-[500px] border border-gray-200 rounded-md outline-none text-black placeholder:text-gray-500 placeholder:text-sm"
+                            type="text" placeholder="Location*">
+        
+                        <!-- Two-column inputs on desktop -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input
+                                class="p-3 w-full sm:w-[240px] border border-gray-200 rounded-md outline-none text-black placeholder:text-gray-500 placeholder:text-sm"
+                                type="number" placeholder="Budget*">
+                            <input
+                                class="p-3 w-full sm:w-[240px] border border-gray-200 rounded-md outline-none text-black placeholder:text-gray-500 placeholder:text-sm"
+                                type="text" placeholder="Subject*">
+                        </div>
+        
+                        <textarea
+                            class="p-3 w-full max-w-[500px] h-[100px] border border-gray-200 rounded-md outline-none text-black placeholder:text-gray-500 placeholder:text-sm"
+                            placeholder="Message*"></textarea>
+        
+                        <a class="text-center text-lg px-5 py-3 bg-[#29AE5F] w-[120px] rounded-lg text-white hover:bg-transparent hover:text-[#29AE5F] hover:border-2 hover:border-[#29AE5F] duration-300"
+                            href="#">
+                            Submit
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+                
+
+
+    </div>
+
+            <!-- JavaScript for menu toggle -->
+            <script>
+                const menuBtn = document.getElementById('menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
+
+</body>
+
+</html>

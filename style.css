@@ -1,0 +1,50 @@
+*{
+    color: #fff;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+::selection{
+    background: #29AE5F;
+    color: white;
+}
+
+.icons i:hover{
+    color:#29AE5F;
+    transition: .4s ease;
+}
+
+
+#menu-btn{
+    position: absolute;
+    top: -40px;
+    right: 10px;
+}
+
+#mobile-menu{
+    top: 0;
+    right: 0;
+}
+
+#mobile-menu li{
+    padding: 10px;
+}
+
+#mobile-menu li a{
+    padding: 10px 50px;
+}
+
+#mobile-menu li:hover{
+    background: rgba(0, 0, 0, 0.808);
+}
+
+#mobile-menu li:last-child{
+    padding: auto;
+}
